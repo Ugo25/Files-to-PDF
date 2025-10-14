@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="screenshots/banner.png" width="60%" alt="Files to PDF banner" />
-</p>
-
 <h1 align="center">🧩 Files to PDF — v1.0.0</h1>
 
 <p align="center">
@@ -9,25 +5,17 @@
 </p>
 
 <p align="center">
-  <!-- Lenguaje principal -->
   <img alt="Java" src="https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white">
-  <!-- Sistemas soportados -->
   <img alt="OS" src="https://img.shields.io/badge/SO-Windows%20%7C%20Linux%20%7C%20macOS-808080?logo=serverfault&logoColor=white">
-  <!-- Build -->
-  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Hugo-Acosta/Files-to-PDF/maven.yml?label=Build&logo=apachemaven">
-  <!-- Última release -->
-  <img alt="Release" src="https://img.shields.io/github/v/release/Hugo-Acosta/Files-to-PDF?color=blue&logo=github">
-  <!-- Issues -->
-  <img alt="Issues" src="https://img.shields.io/github/issues/Hugo-Acosta/Files-to-PDF?logo=github">
-  <!-- Lenguaje principal -->
-  <img alt="Top language" src="https://img.shields.io/github/languages/top/Hugo-Acosta/Files-to-PDF?logo=java&color=red">
-  <!-- Repo size -->
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/Hugo-Acosta/Files-to-PDF?color=purple">
-  <!-- Último commit -->
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/Hugo-Acosta/Files-to-PDF?color=teal">
-  <!-- License -->
+  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Ugo25/Files-to-PDF/maven.yml?label=Build&logo=apachemaven">
+  <img alt="Release" src="https://img.shields.io/github/v/release/Ugo25/Files-to-PDF?color=blue&logo=github">
+  <img alt="Issues" src="https://img.shields.io/github/issues/Ugo25/Files-to-PDF?logo=github">
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/Ugo25/Files-to-PDF?logo=java&color=red">
+  <img alt="Repo size" src="https://img.shields.io/github/repo-size/Ugo25/Files-to-PDF?color=purple">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/Ugo25/Files-to-PDF?color=teal">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue"></a>
 </p>
+
 
 ---
 
@@ -49,9 +37,9 @@
 
 ## 📸 Capturas
 
-| Inicio | Menú principal | Insertar imagen |
-|---|---|---|
-| ![Inicio](assets/screens/home.png) | ![Menú](assets/screens/preview.png) | ![Insertar](assets/screens/cards.png) |
+| Inicio | Menú principal |
+|---|---|
+| ![Inicio](screenshots/inicio.png) | ![Menú](screenshots/opciones.png) 
 
 *(GIFs próximamente: demostración de arrastrar imágenes → exportar PDF → imprimir)*
 

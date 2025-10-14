@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,27 +15,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java 17 (Temurin)
+      # Intenta Temurin 24
+      - name: Setup Java 24 (Temurin)
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '24'
           cache: maven
 
-      # ⬇️ Si tu pom.xml está en una subcarpeta, descomenta esto y ajusta la ruta:
-      # - name: Build with Maven (subcarpeta)
-      #   run: mvn -B -DskipTests package
-      #   working-directory: ./Programa_PDF
+      # Si por alguna razón runner no encuentra Temurin 24,
+      # descomentar este bloque y comenta el de arriba para usar Zulu 24.
+      # - name: Setup Java 24 (Zulu)
+      #   uses: actions/setup-java@v4
+      #   with:
+      #     distribution: zulu
+      #     java-version: '24'
+      #     cache: maven
 
       - name: Build with Maven
         run: mvn -B -DskipTests package
 
-      - name: Upload JAR artifact
-      # Sube el jar generado en target/
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Files-to-PDF-artifacts
+          name: Files-to-PDF
           path: |
             target/*.jar
-            target/*.zip
-            target/*.exe

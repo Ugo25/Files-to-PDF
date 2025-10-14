@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" width="60%" alt="Files to PDF banner" />
+  <img src="screenshots/banner.png" width="60%" alt="Files to PDF banner" />
 </p>
 
 <h1 align="center">🧩 Files to PDF — v1.0.0</h1>

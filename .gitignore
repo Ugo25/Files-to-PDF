@@ -1,0 +1,18 @@
+# Build outputs
+target/
+output/
+dist/
+build/
+*.class
+*.jar
+*.log
+
+# IDE metadata
+nbproject/private/
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

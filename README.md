@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Files to PDF banner" />
+  <img src="assets/banner.png" width="60%" alt="Files to PDF banner" />
 </p>
 
-<h1 align="center">Files to PDF</h1>
+<h1 align="center">🧩 Files to PDF — v1.0.0</h1>
 
 <p align="center">
-  Aplicación Java Swing para crear y editar PDFs: convierte imágenes y archivos de Office a PDF con vista previa y zoom, miniaturas, ordenar/rotar páginas, unir/dividir, marcas de agua e impresión.
+  Aplicación Java Swing moderna para **crear, unir, dividir y editar archivos PDF**, con interfaz visual basada en <b>FlatLaf</b>, vista previa integrada y herramientas de conversión desde imágenes y Office.
 </p>
 
 <p align="center">
@@ -13,18 +13,18 @@
   <img alt="Java" src="https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white">
   <!-- Sistemas soportados -->
   <img alt="OS" src="https://img.shields.io/badge/SO-Windows%20%7C%20Linux%20%7C%20macOS-808080?logo=serverfault&logoColor=white">
-  <!-- Build (requiere workflow maven.yml en GitHub Actions) -->
-  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/<tu-usuario>/Files-to-PDF/maven.yml?label=Build&logo=apachemaven">
+  <!-- Build -->
+  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Hugo-Acosta/Files-to-PDF/maven.yml?label=Build&logo=apachemaven">
   <!-- Última release -->
-  <img alt="Release" src="https://img.shields.io/github/v/release/<tu-usuario>/Files-to-PDF?color=blue&logo=github">
+  <img alt="Release" src="https://img.shields.io/github/v/release/Hugo-Acosta/Files-to-PDF?color=blue&logo=github">
   <!-- Issues -->
-  <img alt="Issues" src="https://img.shields.io/github/issues/<tu-usuario>/Files-to-PDF?logo=github">
+  <img alt="Issues" src="https://img.shields.io/github/issues/Hugo-Acosta/Files-to-PDF?logo=github">
   <!-- Lenguaje principal -->
-  <img alt="Top language" src="https://img.shields.io/github/languages/top/<tu-usuario>/Files-to-PDF?logo=java&color=red">
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/Hugo-Acosta/Files-to-PDF?logo=java&color=red">
   <!-- Repo size -->
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/<tu-usuario>/Files-to-PDF?color=purple">
+  <img alt="Repo size" src="https://img.shields.io/github/repo-size/Hugo-Acosta/Files-to-PDF?color=purple">
   <!-- Último commit -->
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/<tu-usuario>/Files-to-PDF?color=teal">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/Hugo-Acosta/Files-to-PDF?color=teal">
   <!-- License -->
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue"></a>
 </p>
@@ -49,17 +49,9 @@
 
 ## 📸 Capturas
 
-<p align="center">
-  <img src="assets/screens/home.png" width="70%" alt="Pantalla de inicio">
-</p>
-
-<p align="center">
-  <img src="assets/screens/preview.png" width="70%" alt="Vista previa del PDF">
-</p>
-
-<p align="center">
-  <img src="assets/screens/cards.png" width="70%" alt="Acciones disponibles (cards)">
-</p>
+| Inicio | Menú principal | Insertar imagen |
+|---|---|---|
+| ![Inicio](assets/screens/home.png) | ![Menú](assets/screens/preview.png) | ![Insertar](assets/screens/cards.png) |
 
 *(GIFs próximamente: demostración de arrastrar imágenes → exportar PDF → imprimir)*
 
@@ -70,28 +62,29 @@
 - 🖼️ **Imágenes → PDF** (múltiples archivos, ordenar/rotar antes de exportar).  
 - 🗂️ **Unir / Dividir PDF** por rango.  
 - 🔤 **Extraer texto** a TXT.  
-- 🏷️ **Marca de agua (texto)**.  
-- 🖨️ **Imprimir** directamente.  
-- 🔍 **Vista previa con zoom** fluido y miniaturas.  
-- 📄 **Office → PDF** usando LibreOffice (opcional).  
-- ⚙️ UI responsiva, caché de páginas y scroll suave.  
-- 🎨 Tema claro/oscuro con persistencia.  
-- 🗂️ Diálogos nativos para abrir/guardar archivos.  
+- 🏷️ **Marca de agua (texto o imagen)**.  
+- 🖨️ **Impresión directa** desde la vista previa.  
+- 🔍 **Zoom y miniaturas** para explorar el documento.  
+- 📄 **Office → PDF** mediante LibreOffice (opcional).  
+- 🎨 **Tema claro/oscuro persistente** entre sesiones.  
+- ⚙️ **Interfaz responsiva** con scroll fluido y diálogos nativos.  
 
 ---
 
 ## 📋 Requisitos
 
-- **Java 17+** (JDK).  
-- **LibreOffice** instalado (solo si usarás la conversión de Office → PDF).  
-- **Maven** (si deseas compilar desde código fuente).  
+- ☕ **Java 17+ (JDK)**  
+- 🧩 **Maven** (para compilar desde código fuente)  
+- 📝 **LibreOffice** (solo si usarás la conversión Office → PDF)  
 
 ---
 
 ## 🚀 Descargar / Ejecutar
 
 ### 🔹 Opción A: Ejecutar desde IDE
-1. Clona el repo:
-   ```bash
-   git clone https://github.com/<tu-usuario>/Files-to-PDF.git
-   cd Files-to-PDF
+
+```bash
+git clone https://github.com/Hugo-Acosta/Files-to-PDF.git
+cd Files-to-PDF
+mvn clean install
+java -jar target/Files-to-PDF-1.0.0.jar

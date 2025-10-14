@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="Java" src="https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white">
   <img alt="OS" src="https://img.shields.io/badge/SO-Windows%20%7C%20Linux%20%7C%20macOS-808080?logo=serverfault&logoColor=white">
- <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Ugo25/Files-to-PDF/ant.yml?label=Build&logo=apacheant">
+<img alt="Build"src="https://img.shields.io/github/actions/workflow/status/Ugo25/Files-to-PDF/maven.yml?branch=main&label=Build&logo=apachemaven">
   <img alt="Release" src="https://img.shields.io/github/v/release/Ugo25/Files-to-PDF?color=blue&logo=github">
   <img alt="Issues" src="https://img.shields.io/github/issues/Ugo25/Files-to-PDF?logo=github">
   <img alt="Top language" src="https://img.shields.io/github/languages/top/Ugo25/Files-to-PDF?logo=java&color=red">

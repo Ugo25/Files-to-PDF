@@ -35,6 +35,23 @@
 
 ---
 
+## 📂 Estructura del proyecto
+
+```plaintext
+src/
+ ├── main/java/
+ │    └── com/mycompany/programa_pdf/
+ │         ├── MainWindow.java
+ │         ├── PdfPreviewDialog.java
+ │         ├── MergePreviewDialog.java
+ │         ├── WatermarkPreviewDialog.java
+ │         └── ...
+ └── resources/
+      ├── icons/
+      ├── themes/
+      └── config/
+---
+
 ## 📸 Capturas
 
 | Inicio | Menú principal |
